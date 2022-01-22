@@ -35,7 +35,7 @@
               </div>
               <div class="password mt-2 form-group">
               <label for="">Passcode</label>
-              <input type="password" class="form-contMyrol" placeholder="passcode" id="pass" value="">
+              <input type="password" class="form-control" placeholder="passcode" id="pass" value="">
               </div>
               <div>
                  <button class="btn bg-primary mt-2 text-white" value="real" id="send">Enviar</button>
