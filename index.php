@@ -19,7 +19,7 @@
 
     <!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- Option 1: Bootstrap Bundle wit   h Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
     <div class="container row main bg-second mt-5">
@@ -59,8 +59,8 @@
                   <td class=""><center>123</center></td>
                     <td class="">
                     <center>
-                    <button class="btn bg-warning">Update</button>
-                    <button class="btn bg-warning">Delete</button>
+                    <button type="button" class="btn bg-warning" date-id="">Update</button>
+                    <button type="button" class="btn bg-warning">Delete</button>
                     </center>
                    </td>
                 </tr>

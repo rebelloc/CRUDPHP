@@ -1,3 +1,4 @@
+//Insertar los datos
 $(document).on("submit", "#spiderR", function(e){
  e.preventDefault();
  let name = $("#name").val();
@@ -23,4 +24,6 @@ $(document).on("submit", "#spiderR", function(e){
    });
  }
 });
+
+//Traer los datos
 

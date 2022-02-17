@@ -1,9 +1,14 @@
 <?php
 //Making connection with Sql-Server named prac_crud using PDO
-$server = "localhost";
-$database = "crudtest";
-$user = "rebe";
-$passcode = "rebe123$$$";
+// $server = "localhost";
+// $database = "crudtest";
+// $user = "rebe";
+// $passcode = "rebe123$$$";
+
+$server = "i0rgccmrx3at3wv3.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
+$database = "ft9i2sip52cpgqkk";
+$user = "k2ovpb3iryqtyjlv";
+$passcode = "fidzss1ak7l9ags7";
 
 //PDO Connection
 
