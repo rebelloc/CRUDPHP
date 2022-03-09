@@ -16,7 +16,8 @@ $(document).on("submit", "#spiderR", function(e){
        pass:pass 
     },
     success(datos){
-         console.log(datos);
+     location.reload();
+    //  $("#viendo").load(location.href + " #viendo");
     },
     error(){
 
@@ -25,5 +26,32 @@ $(document).on("submit", "#spiderR", function(e){
  }
 });
 
-//Traer los datos
+lista();
+function lista(){
+   $.ajax({
+    url: 'controler/fetch.php', 
+    type: 'POST',
+    success: function(data){
+      lista = JSON.parse(data)
+      html = '';
+      for(let i in lista.fila){
+          html +=`<tr><td class=""><center>${lista.fila[i].nombre}</center></td>
+          <td class=""><center>${lista.fila[i].passcode}</center></td>
+          <td class=""><center>${lista.fila[i].lastname}</center></td>
+          <td class="">
+          <center>
+            <button type="button" class="btn bg-warning" date-id="">Update</button>
+            <button type="button" class="btn bg-warning" date-id="">Delete</button>
+          </center>
+          </td></tr>`;
+      }
+      $("#viendo").html(html);
+    },
+    error: function(){
+      console.log("Wrong.....");
+    }
+   })
+}
+
+
 

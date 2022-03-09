@@ -10,7 +10,7 @@ $database = "ft9i2sip52cpgqkk";
 $user = "k2ovpb3iryqtyjlv";
 $passcode = "fidzss1ak7l9ags7";
 
-//PDO Connection
+//PDO Connection        
 
 try{
     $conn = new PDO("mysql:host={$server}; dbname=$database", $user, $passcode);
